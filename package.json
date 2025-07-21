@@ -1,19 +1,24 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
+  "name": "@opastorello/n8n-nodes-mailtm",
+  "version": "1.0.0",
+  "description": "n8n community node for integrating with Mail.tm, a disposable email API. Receive and process temporary emails in your workflows.",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n",
+    "mailtm",
+    "disposable-email",
+    "workflow",
+    "automation"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/opastorello/n8n-nodes-mailtm#readme",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Nícolas Pastorello",
+    "email": "nicolas@pastorello-lab.com.br"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/opastorello/n8n-nodes-mailtm.git"
   },
   "engines": {
     "node": ">=20.15"
@@ -33,12 +38,11 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/MailTmApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/MailTm/MailTm.node.js",
+      "dist/nodes/MailTm/MailTmTrigger.node.js"
     ]
   },
   "devDependencies": {
